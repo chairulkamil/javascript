@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <script>
+        var weight = prompt("Berat badan anda :");
+        var height = prompt("Tinggi badan anda :");
+    </script>
+    
+    <button onclick="hitungBMI()">Hitung!</button>
+    
+    <script>
+        function hitungBMI(){
+            if (weight > 0 && height > 0){
+                var hasilBMI = weight/(height/100*height/100);
+                document.write(hasilBMI + "<br>");
+
+                if(hasilBMI < 18.5){
+                    document.write("Anda Kurus!");
+                } 
+                if(hasilBMI > 18.5 && hasilBMI < 25){
+                    document.write("Anda sehat!");
+                } 
+                if(hasilBMI > 25){
+                    document.write("Anda Kegemukan!");
+                }
+            } else {
+                alert("Masukkan angka dengan benar!");
+            }
+        }
+    </script>
+    
+</body>
+</html>

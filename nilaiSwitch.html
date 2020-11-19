@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilai</title>
+</head>
+<body>
+    <script>
+        var nama = prompt("masukkan nama anda!");
+        var nilai = prompt("masukkan nilai anda!");
+        var hasil = "";
+
+        switch(true){
+            case nilai < 41:
+                hasil = "E";
+                break;
+            case nilai < 66:
+                hasil = "D";
+                break;
+            case nilai < 76:
+                hasil = "C";
+                break;
+            case nilai < 86:
+                hasil = "B";
+                break;
+            case nilai < 101:
+                hasil = "A";
+                break;
+            default : 
+                document.write("nilai yang anda masukkan salah!");
+        }
+
+        if (hasil === ""){
+            document.write("yang sabar ini ujian");
+        } else {
+            document.write("Nilai anda adalah " + hasil);
+        }
+    </script>
+</body>
+</html>

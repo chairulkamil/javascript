@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan swtich/case</title>
+</head>
+<body>
+    <script>
+        var jawab = prompt("kamu beruntung! silahkan pilih hadiahmu");
+        var hadiah = "";
+
+        switch(jawab){
+            case "1":
+                hadiah = "Tisu";
+                break;
+            case "2":
+                hadiah = "Kopi";
+                break;
+            case "3":
+                hadiah = "Sticker";
+                break;
+            case "4":
+                hadiah = "Minyak Goreng";
+                break;
+            case "5":
+                hadiah = "Rp. 50.000,-";
+                break;
+            default:
+                document.write("Anda salah pilih!");
+        }
+
+        if(hadiah === ""){
+            document.write("Kamu gagal mendapatkan hadiah");
+        } else {
+            document.write("Selamat anda mendapatkan " + hadiah);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian Kelas</title>
+</head>
+<body>
+    <script>
+        var nama = prompt("masukkan nama anda!");
+        var nilai = prompt("silahkan masukkan nilai anda!","");
+        
+        document.write("nama : " + nama + "<br>");
+
+        let result = (nilai <= 40 ? 'E' : (nilai >= 41 && nilai <= 60 ? 'D' : (nilai >= 61 && nilai <= 75 ? 'C' : (nilai >= 76 && nilai <= 85 ? 'B' : (nilai > 85 && nilai <= 100 ? 'A' : 0)))));
+        document.write("nilai anda adalah " + result);
+        
+    </script>
+</body>
+</html>

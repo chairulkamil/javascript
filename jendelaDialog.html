@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Jendela Dialog</title>
+</head>
+<body>
+    <script>//dialog alert</script>
+    <button onclick="alert('Button Sudah Diklik!')">alert button!</button>
+    
+    <script>
+        //dialog confirm
+        var yakin = confirm("Apakah anda akan mengunjungi website suhu?");
+        
+        if(yakin){
+            window.location = "https://petanikode.com";
+        } else {
+            document.write("<br>" + "yaudah disini aja" + "<br>");
+        }
+    </script>
+
+    <script>
+    var nama = <button onclick="prompt('siapa namanya dimana rumahnya?')">prompt button</button>
+    document.write("<p>Hello " + nama + </p>)
+    </script>
+</body>
+</html>

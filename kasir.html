@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Sederhana</title>
+    <script>
+        var nama = prompt("Nama","");
+        var meja = prompt("Meja","");
+        document.write("<p>Hello " + nama + "</p>" + "<p>Nomor Meja : " + meja + "</p>" + "<hr>");
+    </script>
+</head>
+<body>
+    <script>
+        var priceCireng = 10000;
+        var priceIndomie = 5000;
+        var priceEskopi = 15000;
+
+        document.write("1. cireng isi = " + priceCireng + "<br>");
+        document.write("2. indomie rebus = " + priceIndomie + "<br>");
+        document.write("3. es kopiah = " + priceEskopi + "<br>");
+    </script>
+
+    <button onclick="userListener()">Pesan</button>
+    <script>
+        function userListener(){
+            var pesan = prompt("masukkan nomor menu yang akan dipesan","");
+            var qty = prompt("masukkan jumlah yang akan dibeli","");
+            var totalHarga = 0;
+            if(pesan == 1){
+                totalHarga = priceCireng * qty;
+                document.write("Total belanja anda adalah " + totalHarga);
+            } else if (pesan == 2){
+                totalHarga = priceIndomie * qty;
+                document.write("Total belanja anda adalah " + totalHarga);
+            } else if (pesan == 3){
+                totalHarga = priceEskopi * qty;
+                document.write("Total belanja anda adalah " + totalHarga);
+            }
+        }        
+    </script>
+
+</body>
+</html>
+
